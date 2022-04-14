@@ -1,0 +1,43 @@
+{
+  "name": "sesocio-inveCoin",
+  "version": "0.1.1",
+  "description": "SC for SeSocio's InveCoin project",
+  "scripts": {
+    "test:full": "npm run eslint && npm run solium && npm run tests",
+    "test": "npm run tests",
+    "eslint": "eslint ./test/**/*.js ./migrations/**/*.js",
+    "tests": "scripts/test.sh",
+    "ganache-cli": "scripts/run_ganache.sh",
+    "block-utils": "scripts/mine_blocks.sh",
+    "solium": "solium --dir contracts",
+    "deploy": "truffle migrate --reset",
+    "deploy2": "truffle migrate"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "bignumber.js": "8.1.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "eslint": "5.14.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "ganache-cli": "6.3.0",
+    "load-json-file": "5.2.0",
+    "mochawesome": "3.1.1",
+    "moment": "2.24.0",
+    "openzeppelin-solidity": "2.3.0",
+    "openzeppelin-test-helpers": "0.1.2",
+    "prettier": "1.16.4",
+    "solidity-coverage": "0.5.11",
+    "solium": "1.2.3",
+    "solium-plugin-zeppelin": "0.0.2",
+    "truffle": "5.0.4",
+    "truffle-hdwallet-provider": "1.0.4",
+    "truffle-hdwallet-provider-privkey": "0.3.0"
+  },
+  "dependencies": {
+    "dotenv": "8.0.0"
+  }
+}

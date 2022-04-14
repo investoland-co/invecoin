@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "rules": {
+    "arrow-parens": "off",
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependecies": true }],
+    "padded-blocks": "off",
+    "object-curly-newline": "off"
+  },
+  "env": {
+    "mocha": true,
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "contract": false,
+    "assert": false,
+    "web3": false,
+    "artifacts": false
+  }
+}
